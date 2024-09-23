@@ -1,0 +1,3 @@
+theme: jekyll-theme-cayman
+title: [Generative Factor Chaining: Coordinated Manipulation with Diffusion-based Factor Graph]
+description: [Generative Factor Chaining (GFC) is a novel approach that leverages spatial-temporal factor graphs to compose modular generative models for solving long-horizon bimanual coordination tasks.]

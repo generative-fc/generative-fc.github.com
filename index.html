@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Generative Skill Chaining</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="./static/css/academicons.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+<section class="hero">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                    <h1 class="title is-1 publication-title">Generative Factor Chaining: <br/> Coordinated Manipulation with Diffusion-based Factor Graph</h1>
+                    <h3 class="title is-4 conference-authors"><a target="_blank" href="https://www.corl.org/">CoRL 2024, Munich, Germany</a></h3>
+                    <div class="is-size-5 publication-authors">
+                        <span class="author-block">
+                          <a target="_blank" href="https://utkarshmishra04.github.io/">Utkarsh A. Mishra</a>,
+                        </span>
+                        <span class="author-block">
+                          <a target="_blank" href="https://yongxin.ae.gatech.edu/">Yongxin Chen</a>,
+                        </span>
+                        <span class="author-block">
+                          <a target="_blank" href="https://faculty.cc.gatech.edu/~danfei/">Danfei Xu</a>
+                        </span>
+
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Georgia Institute of Technology <br> 
+              <!-- <sup>*</sup>Equal Contribution -->
+            </span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a target="_blank" href="assets/2024_Generative_Factor_Chaining.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+
+            <!-- Arxiv Link. -->
+            <span class="link-block">
+              <a target="_blank" href="#"
+                 class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                    <i class="fas fa-file"></i>
+                </span>
+                <span>ArXiv</span>
+              </a>
+            </span>
+
+            <!-- Video Link. -->
+            <span class="link-block">
+              <a target="_blank" href="#"
+                 class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                    <i class="fab fa-youtube"></i>
+                </span>
+                <span>Video</span>
+              </a>
+            </span>
+
+            <!-- Code Link. -->
+            <span class="link-block">
+              <a target="_blank" href="#"
+                 class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                    <i class="fab fa-github"></i>
+                </span>
+                <span>Code</span>
+                </a>
+            </span>
+            </div>
+          </div>
+        </div>
+    </div>
+</section>
+
+<section class="hero is-light">
+  <div class="hero-body">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <div class="content has-text-justified">
+          <p style="font-size: 125%">
+            TL;DR: We present Generative Factor Chaining (GFC), a novel approach using spatial-temporal factor graphs to compose modular generative models for solving long-horizon bimanual coordination tasks.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+  </div>
+</section>
+
+<section class="hero is-light">
+  <div class="hero-body">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p style="font-size: 125%">
+            In the realm of challenging long-horizon planning tasks involving multiple manipulators, 
+            existing methods encounter computational scalability issues or require an impractical amount of training data. 
+            To address these limitations, we present <b>Generative Factor Chaining (GFC)</b>, a novel approach based on 
+            modularized generative models for learning and composing skills in complex tasks. Our proposed method treats a 
+            long-horizon planning task in a complex scene as a spatial-temporal factor graph, where nodes represent objects 
+            in the scene and factors denote constraints/skills that connect different objects. By employing the diffusion model 
+            framework, different factors can be jointly learned using individual skill data, which is readily obtainable. 
+            During inference, these factors can be flexibly composed, possibly with additional constraints, to achieve long-horizon 
+            planning. The modular design of GFC enables generalization to unseen planning tasks. We showcase the advantages of our 
+            method through real-world experiments.
+          </p>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-widescreen">
+      <!-- Generalization Videos -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Contribution</h2>
+        </div>
+      </div>
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column">
+              <div class="content has-text-justified">
+              <p style="font-size: 125%">
+                The primary contributions of this work encompass:
+                <ul style="font-size: 125%">
+                  <li> A generalized task representation to formulate complex long-horizon coordination tasks
+                    as a spatial-temporal factor graph of single-arm manipulation skill sequences connected via
+                    spatial dependencies. </li>
+                    <li> A compositional framework to compose short-horizon skill-level transition distributions
+                    learned via diffusion models to represent long-horizon task-level distributions. </li>
+                    <li> Easy plug-and-play via learning skill distributions with skill-level data only and add it
+                    to the skill library. Any skill from the library can be plugged as temporal factors in the
+                    spatial-temporal factor graph directly at inference for a given long-horizon task. </li>
+                </ul>
+            </p>
+    
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-widescreen content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{
+      mishra2024generative,
+      title={Generative Factor Chaining: Coordinated Manipulation with Diffusion-based Factor Graph},
+      author={Utkarsh Aashu Mishra and Yongxin Chen and Danfei Xu},
+      booktitle={8th Annual Conference on Robot Learning},
+      year={2024},
+      url={https://openreview.net/forum?id=p6Wq6TjjHH}
+      }</code></pre>
+  </div>
+</section>
+
+
+</body>
+</html>

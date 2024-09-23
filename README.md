@@ -1,0 +1,1 @@
+# Generative Factor Chaining: Coordinated Manipulation with Diffusion-based Factor Graph
